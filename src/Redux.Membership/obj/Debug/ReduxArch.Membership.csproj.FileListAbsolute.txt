@@ -1,0 +1,17 @@
+C:\Users\rossmwee\Documents\Visual Studio 2008\Projects\ReduxArch\src\Redux.Membership\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\rossmwee\Documents\Visual Studio 2008\Projects\ReduxArch\src\Redux.Membership\bin\Debug\ReduxArch.Membership.dll
+C:\Users\rossmwee\Documents\Visual Studio 2008\Projects\ReduxArch\src\Redux.Membership\bin\Debug\ReduxArch.Membership.pdb
+C:\Users\rossmwee\Documents\Visual Studio 2008\Projects\ReduxArch\src\Redux.Membership\bin\Debug\ReduxArch.Util.dll
+C:\Users\rossmwee\Documents\Visual Studio 2008\Projects\ReduxArch\src\Redux.Membership\bin\Debug\ReduxArch.Web.dll
+C:\Users\rossmwee\Documents\Visual Studio 2008\Projects\ReduxArch\src\Redux.Membership\bin\Debug\NHibernate.ByteCode.Castle.dll
+C:\Users\rossmwee\Documents\Visual Studio 2008\Projects\ReduxArch\src\Redux.Membership\bin\Debug\NHibernate.Search.dll
+C:\Users\rossmwee\Documents\Visual Studio 2008\Projects\ReduxArch\src\Redux.Membership\bin\Debug\Castle.DynamicProxy2.dll
+C:\Users\rossmwee\Documents\Visual Studio 2008\Projects\ReduxArch\src\Redux.Membership\bin\Debug\Castle.Core.dll
+C:\Users\rossmwee\Documents\Visual Studio 2008\Projects\ReduxArch\src\Redux.Membership\bin\Debug\NHibernate.dll
+C:\Users\rossmwee\Documents\Visual Studio 2008\Projects\ReduxArch\src\Redux.Membership\bin\Debug\ReduxArch.Data.dll
+C:\Users\rossmwee\Documents\Visual Studio 2008\Projects\ReduxArch\src\Redux.Membership\bin\Debug\Castle.ActiveRecord.dll
+C:\Users\rossmwee\Documents\Visual Studio 2008\Projects\ReduxArch\src\Redux.Membership\bin\Debug\ReduxArch.Data.pdb
+C:\Users\rossmwee\Documents\Visual Studio 2008\Projects\ReduxArch\src\Redux.Membership\bin\Debug\ReduxArch.Web.pdb
+C:\Users\rossmwee\Documents\Visual Studio 2008\Projects\ReduxArch\src\Redux.Membership\bin\Debug\ReduxArch.Util.pdb
+C:\Users\rossmwee\Documents\Visual Studio 2008\Projects\ReduxArch\src\Redux.Membership\obj\Debug\ReduxArch.Membership.dll
+C:\Users\rossmwee\Documents\Visual Studio 2008\Projects\ReduxArch\src\Redux.Membership\obj\Debug\ReduxArch.Membership.pdb

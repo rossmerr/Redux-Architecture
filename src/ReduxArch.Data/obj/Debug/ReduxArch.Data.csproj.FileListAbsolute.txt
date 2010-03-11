@@ -1,0 +1,13 @@
+C:\Users\rossmwee\Documents\Visual Studio 2008\Projects\ReduxArch\src\ReduxArch.Data\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\rossmwee\Documents\Visual Studio 2008\Projects\ReduxArch\src\ReduxArch.Data\bin\Debug\ReduxArch.Data.dll
+C:\Users\rossmwee\Documents\Visual Studio 2008\Projects\ReduxArch\src\ReduxArch.Data\bin\Debug\ReduxArch.Data.pdb
+C:\Users\rossmwee\Documents\Visual Studio 2008\Projects\ReduxArch\src\ReduxArch.Data\bin\Debug\Castle.ActiveRecord.dll
+C:\Users\rossmwee\Documents\Visual Studio 2008\Projects\ReduxArch\src\ReduxArch.Data\bin\Debug\ReduxArch.Core.dll
+C:\Users\rossmwee\Documents\Visual Studio 2008\Projects\ReduxArch\src\ReduxArch.Data\bin\Debug\NHibernate.Search.dll
+C:\Users\rossmwee\Documents\Visual Studio 2008\Projects\ReduxArch\src\ReduxArch.Data\bin\Debug\Castle.DynamicProxy2.dll
+C:\Users\rossmwee\Documents\Visual Studio 2008\Projects\ReduxArch\src\ReduxArch.Data\bin\Debug\NHibernate.ByteCode.Castle.dll
+C:\Users\rossmwee\Documents\Visual Studio 2008\Projects\ReduxArch\src\ReduxArch.Data\bin\Debug\NHibernate.dll
+C:\Users\rossmwee\Documents\Visual Studio 2008\Projects\ReduxArch\src\ReduxArch.Data\bin\Debug\Castle.Core.dll
+C:\Users\rossmwee\Documents\Visual Studio 2008\Projects\ReduxArch\src\ReduxArch.Data\bin\Debug\ReduxArch.Core.pdb
+C:\Users\rossmwee\Documents\Visual Studio 2008\Projects\ReduxArch\src\ReduxArch.Data\obj\Debug\ReduxArch.Data.dll
+C:\Users\rossmwee\Documents\Visual Studio 2008\Projects\ReduxArch\src\ReduxArch.Data\obj\Debug\ReduxArch.Data.pdb

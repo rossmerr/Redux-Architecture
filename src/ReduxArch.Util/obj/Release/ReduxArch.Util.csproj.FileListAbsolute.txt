@@ -1,0 +1,5 @@
+C:\Users\rossmwee\Documents\Visual Studio 2008\Projects\ReduxArch\src\ReduxArch.Util\bin\Release\ReduxArch.Util.dll
+C:\Users\rossmwee\Documents\Visual Studio 2008\Projects\ReduxArch\src\ReduxArch.Util\bin\Release\ReduxArch.Util.pdb
+C:\Users\rossmwee\Documents\Visual Studio 2008\Projects\ReduxArch\src\ReduxArch.Util\obj\Release\ResolveAssemblyReference.cache
+C:\Users\rossmwee\Documents\Visual Studio 2008\Projects\ReduxArch\src\ReduxArch.Util\obj\Release\ReduxArch.Util.dll
+C:\Users\rossmwee\Documents\Visual Studio 2008\Projects\ReduxArch\src\ReduxArch.Util\obj\Release\ReduxArch.Util.pdb

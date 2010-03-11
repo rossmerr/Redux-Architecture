@@ -1,0 +1,237 @@
+<Configuration>
+  <SettingsComponent>
+    <string />
+    <integer />
+    <boolean>
+      <setting name="livetemplates.csharp.usevar">True</setting>
+      <setting name="SolutionAnalysisEnabled">False</setting>
+    </boolean>
+  </SettingsComponent>
+  <NAntValidationSettings>
+    <NAntPath value="" />
+  </NAntValidationSettings>
+  <RecentFiles>
+    <RecentFiles>
+      <File id="AFE7813E-66BC-416F-86D1-93CE250228AC/f:Enums.cs" caret="0" fromTop="0" />
+      <File id="AFE7813E-66BC-416F-86D1-93CE250228AC/d:PagedList/f:BasePagedList.cs" caret="4916" fromTop="28" />
+      <File id="AFE7813E-66BC-416F-86D1-93CE250228AC/d:PagedList/f:IPagedList.cs" caret="3089" fromTop="28" />
+      <File id="AFE7813E-66BC-416F-86D1-93CE250228AC/d:PagedList/f:JsonPagedList.cs" caret="1230" fromTop="28" />
+      <File id="AFE7813E-66BC-416F-86D1-93CE250228AC/d:PagedList/f:PagedList.cs" caret="2920" fromTop="28" />
+      <File id="AFE7813E-66BC-416F-86D1-93CE250228AC/d:PagedList/f:PagerItem.cs" caret="117" fromTop="5" />
+      <File id="AFE7813E-66BC-416F-86D1-93CE250228AC/d:PagedList/f:PagerOptions.cs" caret="1060" fromTop="28" />
+      <File id="AFE7813E-66BC-416F-86D1-93CE250228AC/d:PagedList/f:StaticPagedList.cs" caret="892" fromTop="13" />
+      <File id="AFE7813E-66BC-416F-86D1-93CE250228AC/d:PagedList/f:PagedListExtensions.cs" caret="252" fromTop="7" />
+      <File id="A8000931-5716-46CF-8F1F-EFF9349EDA51/d:PagedList/f:PagerBuilder.cs" caret="602" fromTop="0" />
+      <File id="A8000931-5716-46CF-8F1F-EFF9349EDA51/d:PagedList/f:PagerHelper.cs" caret="1526" fromTop="18" />
+      <File id="6909135D-4689-451D-83CD-24998D570FA3/f:IUserService.cs" caret="857" fromTop="19" />
+      <File id="1E0EFEB9-9D5E-4121-B3C1-2B58BAA2910B/f:SelectItem.cs" caret="145" fromTop="7" />
+      <File id="A8000931-5716-46CF-8F1F-EFF9349EDA51/f:SelectItemWrapper.cs" caret="304" fromTop="12" />
+      <File id="AFE7813E-66BC-416F-86D1-93CE250228AC/d:PersistenceSupport/f:IDbContext.cs" caret="0" fromTop="0" />
+      <File id="AFE7813E-66BC-416F-86D1-93CE250228AC/d:PersistenceSupport/f:IEntityDuplicateChecker.cs" caret="0" fromTop="0" />
+      <File id="AFE7813E-66BC-416F-86D1-93CE250228AC/d:PersistenceSupport/f:IRepository.cs" caret="2310" fromTop="28" />
+      <File id="6909135D-4689-451D-83CD-24998D570FA3/f:IRolesService.cs" caret="0" fromTop="0" />
+      <File id="6909135D-4689-451D-83CD-24998D570FA3/d:Settings/f:AspNetMembershipProviderSettingsWrapper.cs" caret="237" fromTop="7" />
+      <File id="1E0EFEB9-9D5E-4121-B3C1-2B58BAA2910B/d:Castle.ActiveRecord/f:ActiveRecordLinqContext.cs" caret="0" fromTop="0" />
+      <File id="1E0EFEB9-9D5E-4121-B3C1-2B58BAA2910B/d:Castle.ActiveRecord/f:CastleRepository.cs" caret="0" fromTop="0" />
+      <File id="1E0EFEB9-9D5E-4121-B3C1-2B58BAA2910B/d:Castle.ActiveRecord/f:CastleSession.cs" caret="186" fromTop="8" />
+      <File id="1E0EFEB9-9D5E-4121-B3C1-2B58BAA2910B/d:Castle.ActiveRecord/f:CastleSessionModule.cs" caret="0" fromTop="0" />
+      <File id="AFE7813E-66BC-416F-86D1-93CE250228AC/d:DomainModel/f:BaseObject.cs" caret="0" fromTop="0" />
+      <File id="AFE7813E-66BC-416F-86D1-93CE250228AC/d:DomainModel/f:Entity.cs" caret="1283" fromTop="17" />
+      <File id="6909135D-4689-451D-83CD-24998D570FA3/f:AspNetMembershipProviderWrapper.cs" caret="0" fromTop="0" />
+      <File id="6909135D-4689-451D-83CD-24998D570FA3/f:ReduxMembershipProvider.cs" caret="47" fromTop="0" />
+      <File id="1E0EFEB9-9D5E-4121-B3C1-2B58BAA2910B/f:IUser.cs" caret="1525" fromTop="27" />
+      <File id="1E0EFEB9-9D5E-4121-B3C1-2B58BAA2910B/f:IUserFactory.cs" caret="90" fromTop="4" />
+    </RecentFiles>
+    <RecentEdits>
+      <File id="1E0EFEB9-9D5E-4121-B3C1-2B58BAA2910B/f:IUser.cs" caret="2631" fromTop="16" />
+      <File id="1E0EFEB9-9D5E-4121-B3C1-2B58BAA2910B/f:IUser.cs" caret="2750" fromTop="22" />
+      <File id="1E0EFEB9-9D5E-4121-B3C1-2B58BAA2910B/f:IUser.cs" caret="2879" fromTop="28" />
+      <File id="1E0EFEB9-9D5E-4121-B3C1-2B58BAA2910B/f:IUser.cs" caret="2996" fromTop="7" />
+      <File id="1E0EFEB9-9D5E-4121-B3C1-2B58BAA2910B/f:IUser.cs" caret="3106" fromTop="13" />
+      <File id="1E0EFEB9-9D5E-4121-B3C1-2B58BAA2910B/f:IUser.cs" caret="3266" fromTop="11" />
+      <File id="1E0EFEB9-9D5E-4121-B3C1-2B58BAA2910B/f:IUser.cs" caret="296" fromTop="12" />
+      <File id="1E0EFEB9-9D5E-4121-B3C1-2B58BAA2910B/f:IUser.cs" caret="3497" fromTop="12" />
+      <File id="1E0EFEB9-9D5E-4121-B3C1-2B58BAA2910B/f:IUser.cs" caret="3612" fromTop="17" />
+      <File id="1E0EFEB9-9D5E-4121-B3C1-2B58BAA2910B/f:IUser.cs" caret="2390" fromTop="22" />
+      <File id="1E0EFEB9-9D5E-4121-B3C1-2B58BAA2910B/f:IUser.cs" caret="5125" fromTop="25" />
+      <File id="1E0EFEB9-9D5E-4121-B3C1-2B58BAA2910B/f:IUser.cs" caret="5033" fromTop="28" />
+      <File id="1E0EFEB9-9D5E-4121-B3C1-2B58BAA2910B/f:IUser.cs" caret="5033" fromTop="22" />
+      <File id="1E0EFEB9-9D5E-4121-B3C1-2B58BAA2910B/f:IUser.cs" caret="5029" fromTop="28" />
+      <File id="1E0EFEB9-9D5E-4121-B3C1-2B58BAA2910B/f:IUser.cs" caret="4498" fromTop="10" />
+      <File id="1E0EFEB9-9D5E-4121-B3C1-2B58BAA2910B/f:IUser.cs" caret="1334" fromTop="19" />
+      <File id="6909135D-4689-451D-83CD-24998D570FA3/f:ReduxMembershipProvider.cs" caret="36118" fromTop="10" />
+      <File id="6909135D-4689-451D-83CD-24998D570FA3/f:ReduxMembershipProvider.cs" caret="37539" fromTop="9" />
+      <File id="1E0EFEB9-9D5E-4121-B3C1-2B58BAA2910B/f:IUser.cs" caret="4051" fromTop="17" />
+      <File id="1E0EFEB9-9D5E-4121-B3C1-2B58BAA2910B/f:IUser.cs" caret="4001" fromTop="16" />
+      <File id="1E0EFEB9-9D5E-4121-B3C1-2B58BAA2910B/f:IUser.cs" caret="3921" fromTop="13" />
+      <File id="6909135D-4689-451D-83CD-24998D570FA3/f:ReduxMembershipProvider.cs" caret="37832" fromTop="14" />
+      <File id="1E0EFEB9-9D5E-4121-B3C1-2B58BAA2910B/f:IUser.cs" caret="1038" fromTop="20" />
+      <File id="1E0EFEB9-9D5E-4121-B3C1-2B58BAA2910B/f:IUser.cs" caret="1465" fromTop="12" />
+      <File id="6909135D-4689-451D-83CD-24998D570FA3/f:ReduxMembershipProvider.cs" caret="38114" fromTop="26" />
+      <File id="1E0EFEB9-9D5E-4121-B3C1-2B58BAA2910B/f:IUser.cs" caret="4246" fromTop="14" />
+      <File id="6909135D-4689-451D-83CD-24998D570FA3/f:ReduxMembershipProvider.cs" caret="37965" fromTop="24" />
+    </RecentEdits>
+  </RecentFiles>
+  <UnitTestRunner>
+    <Providers />
+  </UnitTestRunner>
+  <CompletionStatisticsManager>
+    <ItemStatistics item="Default">
+      <Item value="public" priority="13" />
+      <Item value="abstract" priority="25" />
+      <Item value="TModel" priority="34" />
+      <Item value="NewModel" priority="0" />
+      <Item value="IEnumerable" priority="5" />
+      <Item value="string" priority="22" />
+      <Item value="TId" priority="8" />
+      <Item value="where" priority="2" />
+      <Item value="int" priority="3" />
+      <Item value="DateTimeOffset" priority="0" />
+      <Item value="DateTime" priority="6" />
+      <Item value="internal" priority="4" />
+      <Item value="Elmah" priority="0" />
+      <Item value="ErrorLog" priority="3" />
+      <Item value="Error" priority="3" />
+      <Item value="ErrorLogEntry" priority="0" />
+      <Item value="new" priority="8" />
+      <Item value="ErrorSignal" priority="0" />
+      <Item value="interface" priority="1" />
+      <Item value="object" priority="0" />
+      <Item value="void" priority="11" />
+      <Item value="Exception" priority="1" />
+      <Item value="propg" priority="0" />
+      <Item value="private" priority="3" />
+      <Item value="message" priority="0" />
+      <Item value="builder" priority="0" />
+      <Item value="context" priority="0" />
+      <Item value="return" priority="3" />
+      <Item value="entity" priority="1" />
+      <Item value="ActiveRecordMediator" priority="0" />
+      <Item value="T" priority="0" />
+      <Item value="static" priority="5" />
+      <Item value="Void" priority="0" />
+      <Item value="temp" priority="0" />
+      <Item value="var" priority="1" />
+      <Item value="fullName" priority="0" />
+      <Item value="module" priority="0" />
+      <Item value="GetType" priority="0" />
+      <Item value="Name" priority="1" />
+      <Item value="Session" priority="0" />
+      <Item value="ISessionScope" priority="0" />
+      <Item value="CastleSession" priority="0" />
+      <Item value="typeof" priority="0" />
+      <Item value="Serializable" priority="0" />
+      <Item value="null" priority="0" />
+      <Item value="Entity" priority="1" />
+      <Item value="params" priority="0" />
+      <Item value="Type" priority="2" />
+      <Item value="foreach" priority="0" />
+      <Item value="user" priority="16" />
+      <Item value="encodePassword" priority="1" />
+      <Item value="salt" priority="2" />
+      <Item value="newPasswordQuestion" priority="0" />
+      <Item value="encodePasswordQuestionAnswer" priority="1" />
+      <Item value="bool" priority="3" />
+      <Item value="Tid" priority="1" />
+      <Item value="IUser" priority="1" />
+      <Item value="IUserFactory" priority="1" />
+      <Item value="username" priority="0" />
+      <Item value="email" priority="2" />
+      <Item value="passwordQuestion" priority="1" />
+      <Item value="isApproved" priority="0" />
+      <Item value="Guid" priority="0" />
+      <Item value="class" priority="0" />
+      <Item value="this" priority="6" />
+      <Item value="password" priority="1" />
+      <Item value="protected" priority="2" />
+      <Item value="questionAnswer" priority="0" />
+      <Item value="float" priority="0" />
+      <Item value="false" priority="0" />
+      <Item value="UserFactory" priority="0" />
+      <Item value="cmsUser" priority="0" />
+      <Item value="MaxInvalidPasswordAttempts" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@Elmah.ErrorSignal">
+      <Item value="FromCurrentContext" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:ReduxArch.Data.NHibernate.HybridSessionBuilder">
+      <Item value="GetHashCode" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Web.HttpApplication">
+      <Item value="EndRequest" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@Castle.ActiveRecord.ActiveRecordMediator`1">
+      <Item value="FindAll" priority="0" />
+      <Item value="Delete" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Generic.IEnumerable`1">
+      <Item value="Count" priority="0" />
+      <Item value="ElementAt" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:ReduxArch.Data.Castle.ActiveRecord.CastleSessionModule">
+      <Item value="Dispose" priority="0" />
+      <Item value="Name" priority="0" />
+      <Item value="GetType" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Type">
+      <Item value="FullName" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@ReduxArch.Data.Castle.ActiveRecord.Session">
+      <Item value="CreateSession" priority="0" />
+      <Item value="GetSession" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@ReduxArch.Data.Castle.ActiveRecord.CastleSession">
+      <Item value="GetSession" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Castle.ActiveRecord.ISessionScope">
+      <Item value="RegisterSession" priority="0" />
+      <Item value="GetSession" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:TModel">
+      <Item value="ChangePassword" priority="0" />
+      <Item value="ChangePasswordQuestionAndAnswer" priority="0" />
+      <Item value="Password" priority="0" />
+      <Item value="ResetPassword" priority="0" />
+      <Item value="LoginTrys" priority="1" />
+      <Item value="UnlockUser" priority="1" />
+      <Item value="UpdateUser" priority="0" />
+      <Item value="LoginTry" priority="0" />
+      <Item value="LoggedIn" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:ReduxArch.Data.IUserFactory">
+      <Item value="CreateUser" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:ReduxArch.Data.IUserFactory`1">
+      <Item value="CreateUser" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.DateTime">
+      <Item value="UtcNow" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:ReduxArch.Data.User`1">
+      <Item value="Password" priority="1" />
+      <Item value="Salt" priority="0" />
+      <Item value="PasswordQuestion" priority="1" />
+      <Item value="QuestionAnswer" priority="0" />
+      <Item value="IsLockedOut" priority="0" />
+      <Item value="LoginTrys" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:ReduxArch.Data.IUserFactory`2">
+      <Item value="CreateUser" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Web.Security.MembershipUser">
+      <Item value="UserName" priority="1" />
+      <Item value="Email" priority="1" />
+      <Item value="PasswordQuestion" priority="1" />
+      <Item value="Comment" priority="0" />
+      <Item value="IsApproved" priority="0" />
+      <Item value="IsLockedOut" priority="0" />
+      <Item value="LastActivityDate" priority="0" />
+      <Item value="LastLockoutDate" priority="0" />
+      <Item value="LastLoginDate" priority="0" />
+      <Item value="LastPasswordChangedDate" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.String">
+      <Item value="Empty" priority="0" />
+    </ItemStatistics>
+  </CompletionStatisticsManager>
+</Configuration>
