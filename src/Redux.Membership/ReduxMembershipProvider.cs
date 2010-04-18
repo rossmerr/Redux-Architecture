@@ -1186,7 +1186,7 @@ namespace Redux.Membership
             return check;
         }
 
-        IUserFactory<TModel, TId> UserFactory
+        public IUserFactory<TModel, TId> UserFactory
         {
             get; set;
         }

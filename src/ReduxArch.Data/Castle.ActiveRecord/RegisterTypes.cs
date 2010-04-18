@@ -18,5 +18,15 @@ namespace ReduxArch.Data.Castle.ActiveRecord
                 ActiveRecordStarter.RegisterTypes(type);                
             }
         }
+
+        public static void CreateSchema()
+        {
+            ActiveRecordStarter.CreateSchema();
+        }
+
+        public static void DropSchema()
+        {
+            ActiveRecordStarter.DropSchema();
+        }
     }
 }
