@@ -12,5 +12,10 @@ namespace ReduxArch.Data.AutoMapper
         {
             return Mapper.Map<TSource, TDest>(model);
         }
+
+        public static IEnumerable<TDest> Map<TSource, TDest>(this IEnumerable<TSource> model)
+        {
+            return Mapper.Map<IEnumerable<TSource>, IEnumerable<TDest>>(model);
+        }
     }
 }

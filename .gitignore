@@ -15,3 +15,6 @@ src/_ReSharper.ReduxArch/WebsiteFileReferences/.version
 src/_ReSharper.ReduxArch/WordIndex.New/8/59619347.dat
 src/Redux.Membership/obj/
 src/Redux.Membership/bin/
+src/Redux.Membership/bin/
+src/Redux.Membership/bin/*
+src/Redux.Membership/bin/Releas
