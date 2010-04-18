@@ -8,7 +8,7 @@
 // --------------------------------------------------------------------------------------------------------------------
 
 using ReduxArch.Core.PagedList;
-using ReduxArch.Data;
+using ReduxArch.Data.Interface;
 using ReduxArch.Util;
 using ReduxArch.Util.Encryption;
 

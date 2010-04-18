@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace ReduxArch.Data
+namespace ReduxArch.Data.Interface
 {
     public interface IUser
     {
@@ -166,8 +166,8 @@ namespace ReduxArch.Data
         }
 
         public void UpdateUser(string username, string email, string comment, bool isApproved, bool isLockedOut,
-            DateTime lastActivityDate, DateTime lastLockoutDate, DateTime lastLoginDate,
-            DateTime lastPasswordChangedDate, string passwordQuestion)
+                               DateTime lastActivityDate, DateTime lastLockoutDate, DateTime lastLoginDate,
+                               DateTime lastPasswordChangedDate, string passwordQuestion)
         {
             this.Email = email;
             this.Comment = comment;
@@ -185,5 +185,5 @@ namespace ReduxArch.Data
         {
             get; protected set;
         }
-    }    
+    }
 }

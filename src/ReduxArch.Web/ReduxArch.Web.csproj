@@ -53,12 +53,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DateTimeExtensions.cs" />
     <Compile Include="HtmlExtension.cs" />
     <Compile Include="PagedList\PagerBuilder.cs" />
     <Compile Include="PagedList\PagerHelper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RequiresSSLAttribute.cs" />
+    <Compile Include="JavaScriptHelper.cs" />
     <Compile Include="SelectItemWrapper.cs" />
+    <Compile Include="TinyMceExtensions.cs" />
+    <Compile Include="WrapperExtension.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\ReduxArch.Core\ReduxArch.Core.csproj">

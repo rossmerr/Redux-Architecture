@@ -76,8 +76,8 @@
     <Compile Include="AutoMapper\MapExtension.cs" />
     <Compile Include="Castle.ActiveRecord\CastleSession.cs" />
     <Compile Include="Castle.ActiveRecord\RegisterTypes.cs" />
-    <Compile Include="IUser.cs" />
-    <Compile Include="IUserFactory.cs" />
+    <Compile Include="Interface\IUser.cs" />
+    <Compile Include="Interface\IUserFactory.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SelectItem.cs" />
   </ItemGroup>
