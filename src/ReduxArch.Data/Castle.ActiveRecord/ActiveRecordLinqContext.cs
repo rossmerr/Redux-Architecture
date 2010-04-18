@@ -1,13 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using Castle.ActiveRecord;
 using Castle.ActiveRecord.Framework;
 using NHibernate.Linq;
 using NHibernate;
 
-namespace OTM.CMS.DataAccessLayer
+namespace ReduxArch.Data.Castle.ActiveRecord
 {
     public class ActiveRecordLinqContext : NHibernateContext
     {

@@ -28,16 +28,6 @@ namespace ReduxArch.Web
             return ModelMetadata.FromLambdaExpression(expression, htmlHelper.ViewData).DisplayName;
         }
         
-        public static IEnumerable<SelectListItem> DefaultSelectListItem(this IEnumerable<SelectListItem> selectListItems, string text)
-        {
-            return DefaultSelectListItem(selectListItems, text, string.Empty);
-        }
 
-        public static IEnumerable<SelectListItem> DefaultSelectListItem(this IEnumerable<SelectListItem> selectListItems, string text, string value)
-        {
-            var list = selectListItems.ToList();
-            list.Insert(0, new SelectListItem { Text = text, Value = value });
-            return list;           
-        }
     }
 }
