@@ -11,13 +11,15 @@ namespace ReduxArch.Data.Castle.ActiveRecord
     {
         public void Init(HttpApplication context)
         {
-            context.EndRequest += new EventHandler(context_EndRequest);
+            context.BeginRequest += context_BeginRequest;
+            context.EndRequest += context_EndRequest;
+
+        }
+
+        private void context_BeginRequest(object sender, EventArgs e)
+        {
             CastleSession.CreateSession();
         }        
-
-        public void Dispose()
-        {            
-        }
 
         private void context_EndRequest(object sender, EventArgs e)
         {
@@ -34,6 +36,10 @@ namespace ReduxArch.Data.Castle.ActiveRecord
                 HttpContext.Current.Trace.Warn("Error", "EndRequest: " + ex.Message, ex);
                 throw ex;
             }
-        }        
+        }
+
+        public void Dispose()
+        {
+        }
     }
 }
