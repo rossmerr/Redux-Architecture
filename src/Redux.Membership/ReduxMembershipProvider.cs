@@ -11,16 +11,14 @@ using ReduxArch.Core.PagedList;
 using ReduxArch.Data.Interface;
 using ReduxArch.Util;
 using ReduxArch.Util.Encryption;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text.RegularExpressions;
+using System.Web.Security;
 
-namespace Redux.Membership
+namespace ReduxArch.Membership
 {
-    using System;
-    using System.Collections.Generic;
-    using System.Linq;
-    using System.Text.RegularExpressions;
-    using System.Web.Security;
-    using ReduxArch.Web.PagedList;
-
     /// <summary>
     /// The redux membership provider.
     /// </summary>
@@ -863,7 +861,7 @@ namespace Redux.Membership
         /// </returns>
         public override int GetNumberOfUsersOnline()
         {
-            var activeDate = DateTime.UtcNow.AddMinutes(-Membership.UserIsOnlineTimeWindow);
+            var activeDate = DateTime.UtcNow.AddMinutes(-System.Web.Security.Membership.UserIsOnlineTimeWindow);
             var coll = new MembershipUserCollection();
             return GetNumberOfUsersOnline(activeDate);
         }
@@ -1041,7 +1039,7 @@ namespace Redux.Membership
             }
 
             string newPassword =
-                Membership.GeneratePassword((MinRequiredPasswordLength < 14) ? 14 : MinRequiredPasswordLength, 
+                System.Web.Security.Membership.GeneratePassword((MinRequiredPasswordLength < 14) ? 14 : MinRequiredPasswordLength, 
                                             MinRequiredNonAlphanumericCharacters);
             string salt = GetSalt(username);
             string encodeNewPassword = EncodePassword(newPassword, salt);
@@ -1177,7 +1175,7 @@ namespace Redux.Membership
                 }
             }
 
-            if (check == true)
+            if (check)
             {
                 user.LoggedIn();
             }

@@ -6,7 +6,9 @@ using ReduxArch.Data.AutoMapper;
 
 namespace ReduxArch.Data.Service
 {
-    public abstract class BaseService<TModel, TViewModel, TId, TRepository> : IBaseService<TModel, TViewModel, TId, TRepository> where TRepository : IRepository<TModel, TId>
+    public abstract class BaseService<TModel, TViewModel, TId, TRepository> 
+        : IBaseService<TModel, TViewModel, TId, TRepository> 
+        where TRepository : IRepository<TModel, TId>
     {
         [Inject]
         public TRepository Repository

@@ -79,11 +79,16 @@
     <Compile Include="Castle.ActiveRecord\CastleSessionModule.cs" />
     <Compile Include="AutoMapper\MapExtension.cs" />
     <Compile Include="Castle.ActiveRecord\CastleSession.cs" />
-    <Compile Include="Castle.ActiveRecord\RegisterTypes.cs" />
+    <Compile Include="Castle.ActiveRecord\EntitiesRegistration.cs" />
+    <Compile Include="Interface\IRole.cs" />
+    <Compile Include="Interface\IRoleFactory.cs" />
     <Compile Include="Interface\IUser.cs" />
     <Compile Include="Interface\IUserFactory.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Role.cs" />
     <Compile Include="Service\BaseService.cs" />
+    <Compile Include="Service\PostbackBaseService.cs" />
+    <Compile Include="User.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\ReduxArch.Core\ReduxArch.Core.csproj">
