@@ -15,25 +15,25 @@ namespace ReduxArch.Web
     /// </summary>
     public static class SelectListItemExtensions
     {
-        public static IEnumerable<SelectListItem> ToSelectList<TModel>(this IEnumerable<TModel> collection, Expression<Func<TModel, object>> text,
-                    Expression<Func<TModel, string>> value)
+       public static IEnumerable<SelectListItem> ToSelectList<TModel, TProperty>(this IEnumerable<TModel> collection, Expression<Func<TModel, object>> text,
+                    Expression<Func<TModel, TProperty>> value)
         {
             var model = new List<TModel>();
             return collection.ToSelectList(text, value, model);
         }
 
-        public static IEnumerable<SelectListItem> ToSelectList<TModel>(this IEnumerable<TModel> collection, Expression<Func<TModel, object>> text,
-            Expression<Func<TModel, string>> value, TModel selected)
+        public static IEnumerable<SelectListItem> ToSelectList<TModel, TProperty>(this IEnumerable<TModel> collection, Expression<Func<TModel, object>> text,
+            Expression<Func<TModel, TProperty>> value, TModel selected)
         {
             var model = new List<TModel> { selected };
             return collection.ToSelectList(text, value, model);
         }
 
-        public static IEnumerable<SelectListItem> ToSelectList<TModel>(this IEnumerable<TModel> collection, Expression<Func<TModel, object>> text,
-            Expression<Func<TModel, string>> value, IEnumerable<TModel> selected)
+        public static IEnumerable<SelectListItem> ToSelectList<TModel, TProperty>(this IEnumerable<TModel> collection, Expression<Func<TModel, object>> text,
+            Expression<Func<TModel, TProperty>> value, IEnumerable<TModel> selected)
         {
-            var dlgText = (Func<TModel, object>)CreatePropertyDelegate<TModel>(ExpressionHelper.GetExpressionText(text));
-            var dlgValue = (Func<TModel, object>)CreatePropertyDelegate<TModel>(ExpressionHelper.GetExpressionText(value));
+            var dlgText = (Func<TModel, object>)CreatePropertyDelegate<TModel, object>(ExpressionHelper.GetExpressionText(text));
+            var dlgValue = (Func<TModel, TProperty>)CreatePropertyDelegate<TModel, TProperty>(ExpressionHelper.GetExpressionText(value));
 
             if (dlgText == null) throw new NullReferenceException("Text Property not found");
 
@@ -58,14 +58,14 @@ namespace ReduxArch.Web
             });
         }
 
-        private static Delegate CreatePropertyDelegate<TModel>(string property)
+        private static Delegate CreatePropertyDelegate<TModel, TProperty>(string property)
         {
             var propertyInfo = typeof(TModel).GetProperty(property);
 
             var method = propertyInfo.GetAccessors(true);
             if (method != null && method.Count() > 0)
             {
-                return Delegate.CreateDelegate(typeof(Func<TModel, object>), method.First());
+                return Delegate.CreateDelegate(typeof(Func<TModel, TProperty>), method.First());
             }
 
             return null;
