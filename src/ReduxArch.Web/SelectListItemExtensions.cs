@@ -1,3 +1,7 @@
+// Copyright (C) 2010 Ross Merrigan
+// Licensed under the GPL licenses:
+// http://www.gnu.org/licenses/gpl.html
+
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
