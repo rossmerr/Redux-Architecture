@@ -41,7 +41,7 @@ namespace ReduxArch.Web
 
             if (selected.Count() > 0)
             {
-                var selectedValues = selected.Select(model => dlgValue(model).ToString()).ToList();
+                var selectedValues = (selected.Where(p => p != null).Select(p => dlgValue(p).ToString())).ToList();
 
                 return collection.Select(p => new SelectListItem
                 {
