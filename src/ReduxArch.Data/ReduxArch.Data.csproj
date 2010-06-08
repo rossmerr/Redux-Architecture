@@ -43,7 +43,7 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\bin\Castle.ActiveRecord.dll</HintPath>
     </Reference>
-    <Reference Include="Lucene.Net, Version=2.3.1.3, Culture=neutral, PublicKeyToken=45b1dda587cdc860, processorArchitecture=MSIL">
+    <Reference Include="Lucene.Net, Version=2.9.2.2, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\bin\Lucene.Net.dll</HintPath>
     </Reference>
@@ -55,7 +55,7 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\bin\NHibernate.Linq.dll</HintPath>
     </Reference>
-    <Reference Include="NHibernate.Search, Version=2.0.0.1001, Culture=neutral, PublicKeyToken=b02813437f591915, processorArchitecture=MSIL">
+    <Reference Include="NHibernate.Search, Version=1.1.0.1001, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\bin\NHibernate.Search.dll</HintPath>
     </Reference>

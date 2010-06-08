@@ -465,7 +465,7 @@ namespace ReduxArch.Util
                 int[] numArray = new int[creditCardNumber.Length];
                 for (int i = 0; i < numArray.Length; i++)
                 {
-                    numArray[i] = Convert.ToInt16(creditCardNumber[i].ToString());
+                    numArray[i] = System.Convert.ToInt16(creditCardNumber[i].ToString());
                 }
                 return IsValidLuhn(numArray);
             }

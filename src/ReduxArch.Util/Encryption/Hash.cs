@@ -37,7 +37,7 @@ namespace ReduxArch.Util.Encryption
 
             byte[] plainTextWithSalt = Encoding.UTF8.GetBytes(plainText + salt);
             byte[] hashBytes = hash.ComputeHash(plainTextWithSalt);
-            string hashValue = Convert.ToBase64String(hashBytes);
+            string hashValue = System.Convert.ToBase64String(hashBytes);
 
 
             ////// Compute hash value of our plain text with appended salt.
@@ -81,7 +81,7 @@ namespace ReduxArch.Util.Encryption
 
             // Fill the salt with cryptographically strong byte values.
             rng.GetNonZeroBytes(saltBytes);
-            return Convert.ToBase64String(saltBytes);
+            return System.Convert.ToBase64String(saltBytes);
         }
     }
 }
