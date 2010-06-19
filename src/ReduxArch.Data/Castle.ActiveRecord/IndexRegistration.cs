@@ -7,7 +7,8 @@ using Castle.ActiveRecord.Framework.Config;
 
 namespace ReduxArch.Data.Castle.ActiveRecord
 {
-    public class IndexRegistration
+    // needs some work to get this going
+    sealed class IndexRegistration
     {
         public static void RegisterAllIndexes(string rootIndexDirectory, params Type[] types)
         {

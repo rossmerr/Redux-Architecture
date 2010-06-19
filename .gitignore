@@ -19,3 +19,15 @@ src/Redux.Membership/bin/
 src/Redux.Membership/bin/*
 src/Redux.Membership/bin/Releas
 src/ReduxArch.Core/obj/Release/Refactor/ReduxArch.Core.dll
+src/ReduxArch.Core/bin/
+src/ReduxArch.Core/obj/
+src/ReduxArch.Data/bin/
+src/ReduxArch.Data/bin/
+src/ReduxArch.Data/obj/Release/
+src/ReduxArch.Data/obj/
+src/ReduxArch.Data/obj/
+src/ReduxArch.Util/bin/
+src/ReduxArch.Util/obj/
+src/ReduxArch.Web/bin/
+src/ReduxArch.Web/obj/
+src/ReduxArch.Data/bin/

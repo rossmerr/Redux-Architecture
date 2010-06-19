@@ -1,6 +1,6 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 10.00
-# Visual Studio 2008
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReduxArch.Core", "ReduxArch.Core\ReduxArch.Core.csproj", "{AFE7813E-66BC-416F-86D1-93CE250228AC}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReduxArch.Data", "ReduxArch.Data\ReduxArch.Data.csproj", "{1E0EFEB9-9D5E-4121-B3C1-2B58BAA2910B}"
