@@ -125,30 +125,30 @@ namespace ReduxArch.Data.Interface
             protected set;
         }
 
-        public void ChangePassword(string password, string salt)
+        public virtual void ChangePassword(string password, string salt)
         {
             this.Password = password;
             this.Salt = salt;
         }
 
-        public void ChangePasswordQuestionAndAnswer(string passwordQuestion, string questionAnswer)
+        public virtual void ChangePasswordQuestionAndAnswer(string passwordQuestion, string questionAnswer)
         {
             this.PasswordQuestion = passwordQuestion;
             this.QuestionAnswer = questionAnswer;
         }
 
-        public void ResetPassword(string password)
+        public virtual void ResetPassword(string password)
         {
             this.Password = password;
         }
 
-        public void UnlockUser()
+        public virtual void UnlockUser()
         {
             this.IsLockedOut = false;
             this.LoginTrys = 0;
         }
 
-        public void LoginTry(int maxInvalidPasswordAttempts)
+        public virtual void LoginTry(int maxInvalidPasswordAttempts)
         {
             this.LoginTrys++;
             if (this.LoginTrys >= maxInvalidPasswordAttempts)
@@ -158,14 +158,14 @@ namespace ReduxArch.Data.Interface
             }
         }
 
-        public void LoggedIn()
+        public virtual void LoggedIn()
         {
             this.LastLoginDate = DateTime.UtcNow;
             this.LastActiveDate = this.LastLoginDate;
             this.LoginTrys = 0;           
         }
 
-        public void UpdateUser(string username, string email, string comment, bool isApproved, bool isLockedOut,
+        public virtual void UpdateUser(string username, string email, string comment, bool isApproved, bool isLockedOut,
                                DateTime lastActivityDate, DateTime lastLockoutDate, DateTime lastLoginDate,
                                DateTime lastPasswordChangedDate, string passwordQuestion)
         {
@@ -181,7 +181,7 @@ namespace ReduxArch.Data.Interface
             this.Username = username;            
         }
 
-        public TId Id
+        public virtual TId Id
         {
             get; protected set;
         }
