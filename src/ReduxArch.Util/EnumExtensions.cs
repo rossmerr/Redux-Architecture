@@ -15,6 +15,12 @@ namespace ReduxArch.Util
             return (attributes.Length > 0) ? attributes[0].Description : value.ToString();
         }
 
+        public static string GetEnumDescriptionEmpty(this Enum value)
+        {
+            var customAttributes = (DescriptionAttribute[])value.GetType().GetField(value.ToString()).GetCustomAttributes(typeof(DescriptionAttribute), false);
+            return customAttributes.Length <= 0 ? null : customAttributes[0].Description;
+        }
+
 
         public static Enum[] GetEnumSortOrder(this System.Array value)
         {
