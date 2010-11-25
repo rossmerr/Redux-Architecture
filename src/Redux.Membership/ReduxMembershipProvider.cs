@@ -7,6 +7,7 @@
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
 
+using System.Diagnostics;
 using ReduxArch.Core.PagedList;
 using ReduxArch.Data.Interface;
 using ReduxArch.Util;
@@ -804,11 +805,20 @@ namespace ReduxArch.Membership
         {
             var coll = new MembershipUserCollection();
 
-            IEnumerable<TModel> users = GetByUsername(usernameToMatch, pageIndex, pageSize);
+            var users = GetByUsername(usernameToMatch, pageIndex, pageSize);
+
+            foreach(var item in users)
+            {
+                Debug.WriteLine(item.Id);
+            }
+
+            //var id2 = users.First().Id;
+
             if (users.Count() > 0)
             {
                 foreach (TModel user in PagedListExtensions.ToPagedList(users, pageIndex, pageSize))
                 {
+                    var id = user.Id;
                     coll.Add(new MembershipUser(ProviderName, user.Username, user.Id, user.Email, user.PasswordQuestion, 
                                                 user.Comment, user.IsApproved, user.IsLockedOut, user.DateCreated, 
                                                 user.LastLoginDate, user.LastActiveDate, user.LastPasswordChangedDate, 
