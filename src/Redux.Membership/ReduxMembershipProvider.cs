@@ -8,6 +8,7 @@
 // --------------------------------------------------------------------------------------------------------------------
 
 using System.Diagnostics;
+using System.Web.Configuration;
 using ReduxArch.Core.PagedList;
 using ReduxArch.Data.Interface;
 using ReduxArch.Util;
@@ -29,6 +30,7 @@ namespace ReduxArch.Membership
     /// </typeparam>
     public abstract class ReduxMembershipProvider<TModel, TId> : MembershipProvider where TModel : IUser<TId>
     {
+
         /// <summary>
         /// The application name.
         /// </summary>
@@ -57,7 +59,7 @@ namespace ReduxArch.Membership
         /// <summary>
         /// The min required password length.
         /// </summary>
-        private int minRequiredPasswordLength = 6;
+        private int minRequiredPasswordLength = 8;
 
         /// <summary>
         /// The password attempt window.
@@ -154,7 +156,10 @@ namespace ReduxArch.Membership
         /// </summary>
         public override int MinRequiredPasswordLength
         {
-            get { return minRequiredPasswordLength; }
+            get
+            {
+                return minRequiredPasswordLength;
+            }
         }
 
         /// <summary>
@@ -900,6 +905,7 @@ namespace ReduxArch.Membership
         /// </returns>
         public override MembershipUser GetUser(string username, bool userIsOnline)
         {
+
             if (!Validation.ValidateParameter(ref username, true, true, true, 0x100))
             {
                 return null;
@@ -909,6 +915,11 @@ namespace ReduxArch.Membership
             TModel user = GetByUsername(username);
             if (user != null)
             {
+                if (userIsOnline)
+                {
+                    user.UserIsOnline();
+                }
+
                 return new MembershipUser(ProviderName, user.Username, user.Id, user.Email, user.PasswordQuestion, 
                                           user.Comment, user.IsApproved, user.IsLockedOut, user.DateCreated, 
                                           user.LastLoginDate, user.LastActiveDate, user.LastPasswordChangedDate, 
@@ -944,6 +955,11 @@ namespace ReduxArch.Membership
             TModel user = GetById(userId);
             if (user != null)
             {
+                if (userIsOnline)
+                {
+                    user.UserIsOnline();
+                }
+
                 return new MembershipUser(ProviderName, user.Username, user.Id, user.Email, user.PasswordQuestion, 
                                           user.Comment, user.IsApproved, user.IsLockedOut, user.DateCreated, 
                                           user.LastLoginDate, user.LastActiveDate, user.LastPasswordChangedDate, 
@@ -1019,6 +1035,21 @@ namespace ReduxArch.Membership
         public abstract IEnumerable<TModel> GetByUsernameAndQuestionAnswer(string username, 
                                                                            string encodePasswordQuestionAnswer);
 
+
+        public static string CreateRandomPassword(int PasswordLength)
+        {
+            string _allowedChars = "abcdefghijkmnopqrstuvwxyzABCDEFGHJKLMNOPQRSTUVWXYZ0123456789";
+            Random randNum = new Random();
+            char[] chars = new char[PasswordLength];
+            int allowedCharCount = _allowedChars.Length;
+
+            for (int i = 0; i < PasswordLength; i++)
+            {
+                chars[i] = _allowedChars[(int)((_allowedChars.Length) * randNum.NextDouble())];
+            }
+
+            return new string(chars);
+        }
         /// <summary>
         /// The reset password.
         /// </summary>
@@ -1040,11 +1071,9 @@ namespace ReduxArch.Membership
                 throw new ArgumentException("Invalid username");
             }
 
-            string newPassword =
-                System.Web.Security.Membership.GeneratePassword((MinRequiredPasswordLength < 14) ? 14 : MinRequiredPasswordLength, 
-                                            MinRequiredNonAlphanumericCharacters);
-            string salt = GetSalt(username);
-            string encodeNewPassword = EncodePassword(newPassword, salt);
+            var newPassword = CreateRandomPassword((MinRequiredPasswordLength < 0) ? 14 : MinRequiredPasswordLength);
+            var salt = GetSalt(username);
+            var encodeNewPassword = EncodePassword(newPassword, salt);
             string encodePasswordQuestionAnswer;
 
             if (!string.IsNullOrEmpty(answer))
@@ -1160,7 +1189,7 @@ namespace ReduxArch.Membership
                 {
                     var now = DateTime.UtcNow;
                     var window = now.Subtract(user.LastLockoutDate);
-                    if (window.Minutes >= PasswordAttemptWindow)
+                    if (window.TotalMinutes >= PasswordAttemptWindow)
                     {
                         user.UnlockUser();
                     }
@@ -1175,11 +1204,6 @@ namespace ReduxArch.Membership
                     user.LoginTry(MaxInvalidPasswordAttempts);
                     check = false;
                 }
-            }
-
-            if (check)
-            {
-                user.LoggedIn();
             }
 
             Save(user);

@@ -42,7 +42,12 @@ namespace ReduxArch.Util
 
         public static DateTime Midnight(this System.DateTime entity)
         {
-            return DateTime.Parse(entity.Day + " " + entity.Month + " " + entity.Year);          
+            var date = DateTime.MinValue;
+            if (DateTime.TryParse(entity.Day + " " + entity.Month + " " + entity.Year, out date))
+            {
+                return date;
+            }
+            return date;
         }
 
         public static double MinutesFromMidnight(this System.DateTime entity)

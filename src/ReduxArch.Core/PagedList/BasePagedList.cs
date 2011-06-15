@@ -33,8 +33,8 @@ namespace ReduxArch.Core.PagedList
 
             if (index < 0)
                 throw new ArgumentOutOfRangeException("index", index, "PageIndex cannot be below 0.");
-            if (pageSize < 1)
-                throw new ArgumentOutOfRangeException("pageSize", pageSize, "PageSize cannot be less than 1.");
+            //if (pageSize < 1)
+            //    throw new ArgumentOutOfRangeException("pageSize", pageSize, "PageSize cannot be less than 1.");
         }
 
         #region IPagedList<T> Members

@@ -33,6 +33,11 @@ public abstract class User<TId> : Entity, IUser<TId>
         LoginTrys = 0;
     }
 
+    public void UserIsOnline()
+    {
+        LastActiveDate = DateTime.UtcNow;
+    }
+
     public virtual void LoginTry(int maxInvalidPasswordAttempts)
     {
         LoginTrys++;

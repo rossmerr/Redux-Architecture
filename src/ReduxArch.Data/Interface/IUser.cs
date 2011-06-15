@@ -30,6 +30,7 @@ namespace ReduxArch.Data.Interface
         void UnlockUser();
         void LoginTry(int maxInvalidPasswordAttempts);
         void LoggedIn();
+        void UserIsOnline();
 
         void UpdateUser(string username, string email, string comment, bool isApproved, bool isLockedOut,
                         DateTime lastActivityDate, DateTime lastLockoutDate, DateTime lastLoginDate,
@@ -163,6 +164,11 @@ namespace ReduxArch.Data.Interface
             this.LastLoginDate = DateTime.UtcNow;
             this.LastActiveDate = this.LastLoginDate;
             this.LoginTrys = 0;           
+        }
+
+        public virtual void UserIsOnline()
+        {
+            this.LastActiveDate = DateTime.UtcNow;
         }
 
         public virtual void UpdateUser(string username, string email, string comment, bool isApproved, bool isLockedOut,

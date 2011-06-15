@@ -25,11 +25,7 @@ namespace ReduxArch.Data.Castle.ActiveRecord
         {
             try
             {
-                var scope = CastleSession.GetSession();
-                if (scope != null)
-                {
-                    scope.Dispose();
-                }
+                CastleSession.DisposeSession();
             }
             catch (Exception ex)
             {
